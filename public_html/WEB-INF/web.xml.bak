@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app>
+ 
+
+    <!--3 Login  -->
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.murho.pda.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReceiveServlet</servlet-name>
+    <servlet-class>com.murho.pda.RecevingServlet</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.murho.seiko.servlet.TestServlet</servlet-class>
+  </servlet>
+  <!--3 PutAwayServlet  -->
+   <servlet>
+    <servlet-name>PutAwayServlet</servlet-name>
+    <servlet-class>com.murho.pda.PutAwayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>com.murho.pda.Servlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PickingServlet</servlet-name>
+    <servlet-class>com.murho.pda.PickingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InboundServlet</servlet-name>
+    <servlet-class>com.murho.pda.InboundServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TrayLabelingServlet</servlet-name>
+    <servlet-class>com.murho.pda.TrayLabelingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LocationTransferServlet</servlet-name>
+    <servlet-class>com.murho.pda.LocationTransferServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StockTakeServlet</servlet-name>
+    <servlet-class>com.murho.pda.StockTakeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TravelerImportServlet</servlet-name>
+    <servlet-class>com.murho.servlet.TravelerImportServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReceivingServlet1</servlet-name>
+    <servlet-class>com.murho.pda.ReceivingServlet1</servlet-class>
+  </servlet>
+
+    <servlet>
+    <servlet-name>StockTransferServlet</servlet-name>
+    <servlet-class>com.murho.pda.StockTransferServlet</servlet-class>
+  </servlet>
+   
+
+
+   <!-- 1 Login  -->
+   <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReceiveServlet</servlet-name>
+    <url-pattern>/ReceiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>PutAwayServlet</servlet-name>
+    <url-pattern>/PutAwayServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>PickingServlet</servlet-name>
+    <url-pattern>/PickingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InboundServlet</servlet-name>
+    <url-pattern>/InboundServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>TrayLabelingServlet</servlet-name>
+    <url-pattern>/TrayLabelingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LocationTransferServlet</servlet-name>
+    <url-pattern>/LocationTransferServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockTakeServlet</servlet-name>
+    <url-pattern>/StockTakeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TravelerImportServlet</servlet-name>
+    <url-pattern>/TravelerImportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReceivingServlet1</servlet-name>
+    <url-pattern>/ReceivingServlet1</url-pattern>
+  </servlet-mapping>
+
+    <servlet-mapping>
+    <servlet-name>StockTransferServlet</servlet-name>
+    <url-pattern>/StockTransferServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+ 
+  
+  <session-config>
+    <session-timeout>200</session-timeout>
+  </session-config>
+  <mime-mapping>
+    <extension>html</extension>
+    <mime-type>text/html</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>txt</extension>
+    <mime-type>text/plain</mime-type>
+  </mime-mapping>
+</web-app>

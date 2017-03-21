@@ -1,0 +1,225 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app>
+ 
+
+    <!--1 Login  -->
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.murho.pda.LoginServlet</servlet-class>
+  </servlet>
+  
+  
+   <servlet>
+    <servlet-name>InboundDataDownloaderServlet</servlet-name>
+    <servlet-class>com.murho.servlet.InboundDataDownloaderServlet</servlet-class>
+  </servlet>
+
+    <!--1 OutboundDataDownloaderServlet  -->
+  <servlet>
+    <servlet-name>OutboundDataDownloaderServlet</servlet-name>
+    <servlet-class>com.murho.servlet.OutboundDataDownloaderServlet</servlet-class>
+  </servlet>
+  
+   <!--WriteFile Servlet-->
+   <servlet>
+    <servlet-name>TrayLabelingWriteFileServlet </servlet-name>
+    <servlet-class>com.murho.servlet.TrayLabelingWriteFileServlet </servlet-class>
+  </servlet>
+  
+    <!-- CommonValidation Servlet  -->
+  <servlet>
+    <servlet-name>CommonValidationServlet</servlet-name>
+    <servlet-class>com.murho.pda.CommonValidationServlet</servlet-class>
+  </servlet>
+   <!--2 Receving Servlet  -->
+  <servlet>
+    <servlet-name>ReceivingServlet1</servlet-name>
+    <servlet-class>com.murho.pda.ReceivingServlet</servlet-class>
+  </servlet>
+  <!--3 PutAwayServlet  -->
+   <servlet>
+    <servlet-name>PutAwayServlet</servlet-name>
+    <servlet-class>com.murho.pda.PutAwayServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>InboundServlet</servlet-name>
+    <servlet-class>com.murho.pda.InboundServlet</servlet-class>
+  </servlet>
+ 
+   <servlet>
+    <servlet-name>TrayLabelingServlet1</servlet-name>
+    <servlet-class>com.murho.pda.TrayLabelingServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+   <servlet-name>LocationTransferServlet</servlet-name>
+    <servlet-class>com.murho.pda.LocationTransferServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>StockTakeServlet</servlet-name>
+    <servlet-class>com.murho.pda.StockTakeServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+    <servlet-name>StockTransferServlet</servlet-name>
+    <servlet-class>com.murho.pda.StockTransferServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ExcelGeneratorServlet</servlet-name>
+    <servlet-class>com.murho.pda.ExcelGeneratorServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>PickingServlet1</servlet-name>
+    <servlet-class>com.murho.pda.PickingServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+      <servlet-name>PickingOut</servlet-name>
+    <servlet-class>com.murho.pda.PickingOut</servlet-class>
+  </servlet>
+  
+    <servlet>
+      <servlet-name>StockAdjustment</servlet-name>
+    <servlet-class>com.murho.pda.StockAdjustment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ImportSalesOrderServlet</servlet-name>
+    <servlet-class>com.murho.servlet.ImportSalesOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>InboundsDataDownloaderServlet</servlet-name>
+    <servlet-class>com.murho.servlet.InboundsDataDownloaderServlet</servlet-class>
+  </servlet>
+  
+  
+   <!--Added by Ranjana for the functionality of UDI implementation under ticket WO0000000471852-->                
+  <servlet>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>com.murho.servlet.FileUploadServlet</servlet-class>
+  </servlet> 
+ 
+
+   <!-- 1 Login  -->
+    
+   
+
+  
+    <servlet-mapping>
+    <servlet-name>InboundDataDownloaderServlet</servlet-name>
+    <url-pattern>/InboundDataDownloaderServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 1 OutBound  -->
+   <servlet-mapping>
+    <servlet-name>OutboundDataDownloaderServlet</servlet-name>
+    <url-pattern>/OutboundDataDownloaderServlet</url-pattern>
+  </servlet-mapping>
+  
+   <!--WriteFile Servlet-->
+  <servlet-mapping>
+    <servlet-name>TrayLabelingWriteFileServlet</servlet-name>
+    <url-pattern>/TrayLabelingWriteFileServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>CommonValidationServlet</servlet-name>
+    <url-pattern>/CommonValidationServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>ReceivingServlet1</servlet-name>
+    <url-pattern>/ReceivingServlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PutAwayServlet</servlet-name>
+    <url-pattern>/PutAwayServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>InboundServlet</servlet-name>
+    <url-pattern>/InboundServlet</url-pattern>
+  </servlet-mapping>
+ 
+  
+     <servlet-mapping>
+    <servlet-name>TrayLabelingServlet1</servlet-name>
+    <url-pattern>/TrayLabelingServlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LocationTransferServlet</servlet-name>
+    <url-pattern>/LocationTransferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>StockTakeServlet</servlet-name>
+    <url-pattern>/StockTakeServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>StockTransferServlet</servlet-name>
+    <url-pattern>/StockTransferServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+    <servlet-name>ExcelGeneratorServlet</servlet-name>
+    <url-pattern>/ExcelGeneratorServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>PickingServlet1</servlet-name>
+    <url-pattern>/PickingServlet1</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>PickingOut</servlet-name>
+    <url-pattern>/PickingOut</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>StockAdjustment</servlet-name>
+    <url-pattern>/StockAdjustment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImportSalesOrderServlet</servlet-name>
+    <url-pattern>/ImportSalesOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>InboundsDataDownloaderServlet</servlet-name>
+    <url-pattern>/InboundsDataDownloaderServlet</url-pattern>
+  </servlet-mapping>
+  
+   <!--Added by Ranjana for the functionality of UDI implementation under ticket WO0000000471852-->                
+    <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <session-config>
+    <session-timeout>-1</session-timeout>
+  </session-config>
+  <mime-mapping>
+    <extension>html</extension>
+    <mime-type>text/html</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>txt</extension>
+    <mime-type>text/plain</mime-type>
+  </mime-mapping>
+</web-app>
